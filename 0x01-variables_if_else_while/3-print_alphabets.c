@@ -13,7 +13,7 @@ int main(void)
 	char min;
 
 	for (min = 'a'; min <= 'z'; min++)
-		putchar(low);
+		putchar(min);
 	for (min = 'A'; min <= 'Z'; min++)
 		putchar(min);
 	putchar('\n');
