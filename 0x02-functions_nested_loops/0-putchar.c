@@ -1,18 +1,25 @@
 /**
- * main - Prints _putchar
- * @void: Empty parameter list for main.
- *
- * Description: Prints _putchar
- * 
- *
- * Return: 0 for success
+* main - Prints _putchar
+* @void: Empty parameter list for main.
+*
+* Description: Prints _putchar
+*
+*
+* Return: 0 for success
 */
 
-#include <stdio.h>
+#include "main.h"
 
 
-int main() {
-    printf("_putchar");
-
-    return 0;
+int main(void)
+{
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	return (0);
 }
