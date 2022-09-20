@@ -1,16 +1,20 @@
 #include "main.h"
 
 /**
- * _puts - check the code for Holberton School students.
- * @str: String to be printed out
- * Return: Always 0.
- */
+ * _puts - prints string
+ * @str: input string to print
+ * Description: prints string to stdout
+ * Return: nothing
+ **/
+
 void _puts(char *str)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; str[i] != '\0'; i++)
+	while (str[i] != '\0')
+	{
 		_putchar(str[i]);
-
+		i++;
+	}
 	_putchar('\n');
 }
