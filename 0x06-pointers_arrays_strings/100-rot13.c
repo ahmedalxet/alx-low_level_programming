@@ -7,14 +7,25 @@
  */
 char *rot13(char *s)
 {
-	char c[] = {"NOPQRSTUVWXYZABCDEFGHIJKLM[\\]^_`nopqrstuvwxyzabcdefghijklm"};
+	char *input, *output;
+	int count, count2;
 
-	int i;
-
-	for (i = 0; src[i] != '\0'; i++)
+	input = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	output = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	count = 0;
+	while (str[count] != '\0')
 	{
-		if (src[i] >= 'A' && src[i] <= 'z')
-			src[i] = c[src[i] - 'A'];
+		count2 = 0;
+		while (input[count2] != '\0')
+		{
+			if (str[count] == input[count2])
+			{
+				str[count] = output[count2];
+				break;
+			}
+			count2++;
+		}
+		count++;
 	}
-	return (src);
+	return (str);
 }
